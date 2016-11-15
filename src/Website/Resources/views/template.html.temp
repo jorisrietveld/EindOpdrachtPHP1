@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" type="text/css" href="/css/theme.css" />
+  {% block head %}
+  <title>Welkom</title>
+  {% endblock %}
+</head>
+<body>
+
+  <div class="page-wrapper">
+
+    <header class="header-wrapper">
+
+    </header>
+
+    <nav class="nav-wrapper">
+
+    </nav>
+
+    <main class="content-wrapper">
+      {% block content %}
+      {% end block %}
+    </main>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+
+    <maps>
+        <api-key>AIzaSyAHL9jZdGrTkWXe1np536RX4AgTMuaxYrE</api-key>
+        <street>van Schaikweg 94</street>
+        <place>Emmen</place>
+        <window-text>Dit is de locatie van mijn school, Helaas kon google maps mijn adres niet vinden...</window-text>
+    </maps>
+
+    <translate>
+        <api-key>trnsl.1.1.20161008T210816Z.46085af52648e1ee.b89bab2fe163a83fbe6413d38322a11818d9630b</api-key>
+        <url>https://translate.yandex.net/api/v1.5/tr.json/translate</url>
+    </translate>
+
+    <host>
+        <name>localhost</name>
+        <hostname>loc.extern</hostname>
+        <prefix>/EindOpdrachtPhpTwig</prefix>
+    </host>
+
+    <host>
+        <name>prodserver</name>
+        <hostname>146.185.141.142</hostname>
+        <prefix>/joris/EindOpdrachtPhpTwig</prefix>
+    </host>
+
+    <route>
+        <name>Error404</name>
+        <controller>Error404</controller>
+        <path>/404</path>
+        <method>index</method>
+    </route>
+
+    <route>
+        <name>Error500</name>
+        <controller>Error500</controller>
+        <path>/500</path>
+        <method>index</method>
+    </route>
+
+    <route>
+        <name>Home</name>
+        <controller>Home</controller>
+        <path>/</path>
+        <method>index</method>
+    </route>
+    <route>
+        <name>Home</name>
+        <controller>Home</controller>
+        <path>/home</path>
+        <method>index</method>
+    </route>
+    <route>
+        <name>Location</name>
+        <controller>Location</controller>
+        <path>/locatie</path>
+        <method>index</method>
+    </route>
+    <route>
+        <name>Interests</name>
+        <controller>Interests</controller>
+        <path>/interests</path>
+        <method>index</method>
+    </route>
+    <route>
+        <name>Contact</name>
+        <controller>Contact</controller>
+        <path>/contact</path>
+        <method>index</method>
+        <httpMethod>GET</httpMethod>
+    </route>
+    <route>
+        <name>Contact</name>
+        <controller>Contact</controller>
+        <path>/contact-handle</path>
+        <method>handle</method>
+        <httpMethod>POST</httpMethod>
+    </route>
+    <route>
+        <name>Weather</name>
+        <controller>Weather</controller>
+        <path>/weather</path>
+        <method>index</method>
+        <httpMethod>GET</httpMethod>
+    </route>
+</configuration>

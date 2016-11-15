@@ -1,0 +1,21 @@
+{
+    "name": "jorisrietveld/website",
+    "license": "GPLv3",
+    "authors": [
+        {
+            "name": "joris rietveld",
+            "email": "jorisrietveld@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "phpunit/phpunit": "^5.5",
+        "symfony/http-foundation": "3.1.*",
+        "twig/twig": "^1.26"
+    },
+    "autoload": {
+        "psr-4": {
+            "JorisRietveld\\Website\\" : "src/Website"
+        }
+    }
+}

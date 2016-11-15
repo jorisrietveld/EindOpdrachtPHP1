@@ -1,0 +1,23 @@
+{% extends 'index.html.twig' %}
+
+{% block content %}
+    <h1>Het weer in: {{ weather_location }}</h1>
+    <div class="row weather-content-wrapper">
+
+        <div class="weatherinfo-wrapper col-lg-4 text-center">
+            <i class="wi wi-yahoo-{{ weather_code }} weather-icon"></i>
+            <br />
+            <span class="weather-description">{{ weather_type }}</span>
+        </div>
+
+        <div class="weathertemp-wrapper col-lg-1">
+            <i class="wi wi-thermometer weather-icon-temperature"></i>
+        </div>
+        <div class="weathertemp-wrapper-text col-lg-7">
+            <span class="weather-temperature-description col-lg-12">{{ weather_celcius }} graden Celsius</span>
+            <span class="weather-temperature-description col-lg-12">{{ weather_farhenheit }} graden Fahrenheit</span>
+            <span class="weather-temperature-description col-lg-12">{{ weather_kelvin }} Kelvin</span>
+        </div>
+
+    </div>
+{% endblock %}

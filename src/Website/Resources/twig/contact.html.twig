@@ -1,0 +1,26 @@
+{% extends 'index.html.twig' %}
+
+{% block content %}
+    <h1>Neem contact op:</h1>
+    {{ message | raw }}
+    <form action="contact-handle" method="post" style="width: 500px;">
+
+        <div class="form-group">
+            <label for="name">Naam:</label>
+            <input class="form-control" id="form-name" name="form-name" placeholder="Bob"/>
+        </div>
+
+        <div class="form-group">
+            <label for="email">E-mail adres:</label>
+            <input class="form-control" id="form-email" name="form-email" placeholder="bob@nsa.gov"/>
+        </div>
+
+        <div class="form-group">
+            <label for="form-message">Bericht:</label>
+            <textarea class="form-control" id="form-message" name="form-message" placeholder="Text text en nog eens text..."></textarea>
+
+            <br />
+            <input type="submit" value="verstuur" />
+        </div>
+    </form>
+{% endblock %}
